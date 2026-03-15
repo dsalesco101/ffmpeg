@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: video-stitcher-api
+    env: node
+    buildCommand: |
+      apt-get update
+      apt-get install -y ffmpeg
+      npm install
+    startCommand: npm start
